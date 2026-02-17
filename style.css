@@ -47,6 +47,24 @@ body {
     padding: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+    }
+
+    html,
+    body {
+        background-color: var(--light-bg) !important;
+        color: var(--text-color) !important;
+    }
+
+    img,
+    video,
+    svg {
+        filter: none !important;
+    }
+}
+
 h1,
 h2,
 h3,
