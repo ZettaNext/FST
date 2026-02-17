@@ -1,5 +1,6 @@
 /* Modern Reset and Typography */
 :root {
+    color-scheme: light;
     --primary-color: #ff6d00;
     /* Vibrant Orange */
     --primary-dark: #c43c00;
@@ -33,6 +34,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     height: 100%;
+    color-scheme: light;
 }
 
 body {
