@@ -1,0 +1,97 @@
+========================================
+INSTRUÇÕES PARA IMAGENS - ENGENHARIA CIVIL
+========================================
+
+A página de Engenharia Civil está configurada para usar 7 imagens específicas.
+Você já possui 1 imagem. Precisa baixar mais 6 imagens.
+
+----------------------------------------
+NOMENCLATURA DAS IMAGENS:
+----------------------------------------
+
+✅ engenharia civil.jpg (JÁ EXISTE - Hero principal)
+   Local: Hero section (topo da página)
+   Sugestão: Imagem impactante de construção ou obra moderna
+
+⏳ engenharia civil 2.jpg (BAIXAR)
+   Local: Galeria - Card 1
+   Título: "Planejamento"
+   Sugestão: Plantas baixas, projetos, desenhos técnicos
+
+⏳ engenharia civil 3.jpg (BAIXAR)
+   Local: Galeria - Card 2
+   Título: "Execução"
+   Sugestão: Canteiro de obras, construção em andamento
+
+⏳ engenharia civil 4.jpg (BAIXAR)
+   Local: Galeria - Card 3
+   Título: "Inovação"
+   Sugestão: Tecnologia BIM, equipamentos modernos
+
+⏳ engenharia civil 5.jpg (BAIXAR)
+   Local: Galeria - Card 4
+   Título: "Sustentabilidade"
+   Sugestão: Construção sustentável, painéis solares, tecnologia verde
+
+⏳ engenharia civil 6.jpg (BAIXAR)
+   Local: Seção Split (imagem lateral)
+   Título: "Excelência em Cada Projeto"
+   Sugestão: Edifício finalizado, estrutura impressionante, ponte
+
+⏳ engenharia civil 7.jpg (BAIXAR)
+   Local: Seção Habilidades (imagem destaque)
+   Título: "Profissionais de Engenharia Civil"
+   Sugestão: Equipe de engenheiros, profissionais com capacete, reunião técnica
+
+----------------------------------------
+COMO SALVAR AS IMAGENS:
+----------------------------------------
+
+1. Baixe as 6 imagens da internet
+2. Salve-as exatamente com os nomes acima na pasta:
+   c:\Users\Administrador\Documents\NB final 9\
+
+3. Certifique-se de que todas são .jpg (ou renomeie conforme necessário)
+
+----------------------------------------
+FORMATO RECOMENDADO:
+----------------------------------------
+
+- Resolução mínima: 1200px de largura
+- Formato: JPG (para menor tamanho de arquivo)
+- Qualidade: Alta (80-90%)
+
+----------------------------------------
+ONDE BUSCAR IMAGENS:
+----------------------------------------
+
+Sugestões de sites gratuitos:
+- Unsplash.com
+- Pexels.com
+- Pixabay.com
+- Freepik.com (com atribuição)
+
+Palavras-chave para busca (em inglês):
+- "civil engineering"
+- "construction site"
+- "building construction"
+- "engineering plans"
+- "sustainable building"
+- "infrastructure project"
+- "construction workers"
+
+----------------------------------------
+APÓS BAIXAR AS IMAGENS:
+----------------------------------------
+
+✅ A página já está totalmente configurada
+✅ As imagens aparecerão automaticamente ao serem salvas
+✅ Não precisa alterar código
+
+----------------------------------------
+
+Para outras áreas (Arquitetura, etc.), use o mesmo padrão:
+- arquitetura.jpg
+- arquitetura 2.jpg
+- arquitetura 3.jpg
+... e assim por diante.

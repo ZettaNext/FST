@@ -1,0 +1,286 @@
+/* Google Reviews Section - Material Design Enhanced */
+
+/* Typography adjustments */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Carousel Container */
+.reviews-carousel {
+  overflow: hidden;
+  position: relative;
+  padding: 30px 0 60px;
+  /* Space for hover effects and shadows */
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Blur Effect on Edges */
+.reviews-carousel::before,
+.reviews-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  /* Wider fade for smoother look */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.reviews-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, var(--light-bg), transparent);
+}
+
+.reviews-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, var(--light-bg), transparent);
+}
+
+/* Track Animation */
+.reviews-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scrollReviews 50s linear infinite;
+  /* Slower and smoother */
+  padding-left: 20px;
+}
+
+/* Pause on hover for readability */
+.reviews-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollReviews {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 12px));
+    /* Half width + half gap */
+  }
+}
+
+/* Enhanced Review Card - Google Material Style */
+.review-card {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 24px;
+  /* More rounded like Material You */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /* Material Shadow 1 */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  border: none;
+  min-width: 360px;
+  /* Slightly wider */
+  max-width: 360px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  /* Use Roboto for that Android/Google feel */
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+  /* Material Shadow 3 */
+}
+
+/* Google G Icon top right */
+.google-icon-wrapper {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header Layout */
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 16px;
+  padding-right: 40px; /* Espaço para o logo do Google */
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #7b1fa2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Colors for avatars */
+.avatar-orange {
+  background-color: #ef6c00;
+}
+
+.avatar-blue {
+  background-color: #1976d2;
+}
+
+.avatar-green {
+  background-color: #388e3c;
+}
+
+.avatar-pink {
+  background-color: #c2185b;
+}
+
+.avatar-teal {
+  background-color: #00897b;
+}
+
+.review-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #202124;
+  /* Google Black */
+  font-weight: 500;
+  /* Medium weight */
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.review-meta {
+  font-size: 0.8rem;
+  color: #5f6368;
+  /* Google Grey */
+  display: none; /* Ocultar quantidade de avaliações e fotos */
+}
+
+/* Stars Row */
+.stars-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.review-stars {
+  color: #fbbc04;
+  font-size: 0.95rem;
+  /* Slightly larger */
+  display: flex;
+  gap: 2px;
+}
+
+.review-date {
+  font-size: 0.85rem;
+  color: #5f6368;
+}
+
+/* Review Text */
+.review-text {
+  font-family: 'Roboto', sans-serif;
+  color: #3c4043;
+  /* Google Dark Grey */
+  line-height: 1.5;
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Aggregate Rating Header - Centered Layout */
+.aggregate-rating {
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* The "4.9" big number */
+.rating-number {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #202124;
+  line-height: 1;
+  font-family: 'Google Sans', 'Roboto', sans-serif;
+}
+
+.rating-stars {
+  color: #fbbc04;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.rating-count {
+  color: #5f6368;
+  font-size: 0.95rem;
+}
+
+/* Google Logo Text Style */
+.google-text-logo {
+  font-family: 'Product Sans', 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Button Update */
+.btn-google {
+  background-color: #fff;
+  color: #1a73e8;
+  /* Google Link Blue */
+  border: 1px solid #dadce0;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-family: 'Google Sans', 'Roboto', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.btn-google:hover {
+  background-color: #f1f8ff;
+  /* Light blue tint */
+  border-color: #d2e3fc;
+  color: #174ea6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .review-card {
+    min-width: 280px;
+    max-width: 280px;
+  }
+
+  .reviews-carousel::before,
+  .reviews-carousel::after {
+    width: 50px;
+  }
+
+  .rating-number {
+    font-size: 3rem;
+  }
+}
