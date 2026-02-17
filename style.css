@@ -433,8 +433,8 @@ img {
 
 
 .header {
-    background: rgba(210, 210, 210, 0.95);
-    /* Slightly darker light gray */
+    background: rgba(240, 240, 240, 0.95);
+    /* Lighter gray */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
@@ -449,8 +449,8 @@ img {
 
 .header.scrolled {
     padding: 8px 0;
-    background: rgba(200, 200, 200, 0.98);
-    /* Matching darker scroll state */
+    background: rgba(230, 230, 230, 0.98);
+    /* Matching lighter scroll state */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 

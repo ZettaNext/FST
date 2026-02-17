@@ -175,3 +175,147 @@
     font-size: 0.9rem !important;
   }
 }
+
+
+
+/* Adjust Service Item to make room for the badge */
+.service-item {
+  padding-top: 60px !important;
+  /* Push icon down to make space for the text */
+  position: relative;
+  /* Ensure absolute positioning works contextually */
+}
+
+/* Click Info Text Overlay - Refined Design */
+@keyframes pulse-soft {
+  0% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 4px 10px rgba(255, 109, 0, 0.3);
+  }
+
+  50% {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 109, 0, 0.5);
+  }
+
+  100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 4px 10px rgba(255, 109, 0, 0.3);
+  }
+}
+
+.click-info {
+  position: absolute;
+  top: 15px;
+  /* Positioned nicely in the new header space */
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Elegant Gradient & Shape */
+  background: linear-gradient(135deg, #ff6d00, #f57c00);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 30px;
+
+  /* Sleek Typography */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+
+  /* Interaction & Visibility */
+  opacity: 1;
+  z-index: 10;
+  pointer-events: none;
+
+  /* Premium Depth */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: pulse-soft 3s infinite ease-in-out;
+}
+
+/* Hover State - Slight lift */
+.service-item:hover .click-info {
+  background: linear-gradient(135deg, #f57c00, #ff6d00);
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 109, 0, 0.4);
+}
+
+/* Mobile Adjustments - Cleaner & Less Intrusive */
+@media (max-width: 991px) {
+  .service-item {
+    padding-top: 50px !important;
+    /* Slightly less padding on mobile */
+  }
+
+  .click-info {
+    top: 0;
+    width: 100%;
+    left: 0;
+    transform: none !important;
+    border-radius: 18px 18px 0 0;
+    /* Rounded top corners only */
+    background: rgba(255, 109, 0, 0.95);
+    /* Solid header bar look */
+    padding: 6px 2px;
+    /* Reduced vertical padding, added minimal horizontal */
+    font-size: 0.55rem;
+    /* Smaller font to fit */
+    letter-spacing: 0.5px;
+    /* Tighter letter spacing */
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+    animation: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    /* Ensure it stays on one line */
+  }
+
+  .service-item:hover .click-info {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Change background image for mobile on Quem Somos section */
+  #quem-somos {
+    background: url('imagem 1 mobile.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  /* Change background image for mobile on Values section */
+  #valores {
+    background: url('imagem 2 mobile.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  /* Change background image for mobile on Area de Atuacao section */
+  #atuacao {
+    background: url('imagem 3 mobile.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  /* Change background image for mobile on Servicos section */
+  #servicos {
+    background: url('imagem 4 mobile.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  /* Change background image for mobile on Missao/Valores section */
+  #missao-valores {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('imagem 5 mobile.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
