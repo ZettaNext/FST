@@ -95,7 +95,19 @@
       <div class="mvv-grid">
         <div class="mvv-card animate-on-scroll">
           <div class="icon-box">
-            <i class="fas fa-bullseye"></i>
+            <svg viewBox="0 0 120 120" width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="5">
+              <g transform="rotate(-45 60 60)">
+                <!-- Circles with gaps aligned to 0 degrees -->
+                <circle cx="60" cy="60" r="16" stroke-dasharray="82.4 18.1" stroke-dashoffset="-9.05" />
+                <circle cx="60" cy="60" r="32" stroke-dasharray="170.4 30.7" stroke-dashoffset="-15.35" />
+                <circle cx="60" cy="60" r="48" stroke-dasharray="263.9 37.7" stroke-dashoffset="-18.85" />
+                <!-- Arrow dart pointing precisely into center -->
+                <line x1="50" y1="60" x2="102" y2="60" />
+                <polygon points="96,46 110,46 102,60 110,74 96,74 88,60" fill="var(--white, #ffffff)"
+                  stroke-linejoin="miter" />
+              </g>
+            </svg>
           </div>
           <h3>Missão</h3>
           <p>Impactar e promover uma mudança positiva nas comunidades onde atuamos, levando alegria, cor e significado
@@ -464,7 +476,7 @@
   <!-- Mídias e Divulgação -->
   <section id="midias" class="section bg-light">
     <div class="container">
-      <h2 class="section-title text-center"><i class="fas fa-camera"></i> Mídias e Divulgação</h2>
+      <h2 class="section-title text-center"><i class="fas fa-camera" style="margin-right: 36px;"></i>Mídias e Divulgação</h2>
       <p class="section-intro">Registro fotográfico das ações, eventos e bastidores do projeto, mostrando o processo
         criativo e a interação com a comunidade.</p>
       <div class="midias-gallery animate-on-scroll">
@@ -505,7 +517,46 @@
           <h4>Apoiadores</h4>
         </div>
         <div class="holarquia-item animate-on-scroll">
-          <i class="fas fa-share-alt"></i>
+          <svg class="svg-lg" viewBox="0 0 100 100" width="1em" height="1em">
+            <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Outer Arcs -->
+              <path d="M 34,22 A 32,32 0 0,1 66,22" />
+              <path d="M 66,78 A 32,32 0 0,1 34,78" />
+              <path d="M 22,34 A 32,32 0 0,0 22,66" />
+              <path d="M 78,34 A 32,32 0 0,1 78,66" />
+              <!-- Inner Arcs -->
+              <path d="M 38,29 A 24,24 0 0,1 62,29" />
+              <path d="M 62,71 A 24,24 0 0,1 38,71" />
+              <path d="M 29,38 A 24,24 0 0,0 29,62" />
+              <path d="M 71,38 A 24,24 0 0,1 71,62" />
+
+              <!-- Top-Left: Facebook -->
+              <circle cx="21" cy="21" r="13" />
+              <path d="M 23,28 V 18 C 23,15 26,15 26,15 M 19,21 H 26" />
+
+              <!-- Top-Right: Message Bubble -->
+              <path d="M 64,12 H 88 V 26 H 78 V 32 L 70,26 H 64 Z" />
+              <line x1="72" y1="17" x2="72" y2="21" />
+              <line x1="80" y1="17" x2="80" y2="21" />
+
+              <!-- Bottom-Left: Instagram -->
+              <rect x="10" y="66" width="22" height="22" rx="6" />
+              <circle cx="21" cy="77" r="5" />
+              <line x1="27" y1="71.5" x2="27" y2="71.5" stroke-width="4.5" />
+
+              <!-- Bottom-Right: Play Button -->
+              <circle cx="78" cy="78" r="13" />
+              <polygon points="73,72 73,84 84,78" />
+
+              <!-- Center: Thumbs Up -->
+              <!-- Sleeve -->
+              <path d="M 40,48 H 45 V 60 H 40 Z" />
+              <line x1="42.5" y1="54" x2="42.5" y2="54" stroke-width="4.5" />
+              <!-- Hand -->
+              <path
+                d="M 45,60 H 53 c 3,0 3,-4 0,-4 c 3,0 3,-4 0,-4 c 4,0 4,-4 -2,-4 H 49 l 2,-6 c 1,-4 -2,-6 -4,-4 c -1,2 -1,5 -1,8" />
+            </g>
+          </svg>
           <h4>Mídias Digitais</h4>
         </div>
         <div class="holarquia-item animate-on-scroll">

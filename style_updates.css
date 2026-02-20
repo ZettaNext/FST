@@ -319,3 +319,47 @@
     background-position: center !important;
   }
 }
+
+/* Justify text in Quem Somos and Valores section for desktop and mobile */
+#quem-somos .about-list li strong,
+#valores .belief-item p,
+#valores .belief-item .quality-list li strong {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto !important;
+  -webkit-hyphens: auto !important;
+  word-break: break-word !important;
+  /* Forces breaking long words to prevent gaps */
+}
+
+/* Specific gap reduction adjustments for desktop */
+@media (min-width: 769px) {
+
+  #quem-somos .about-list li strong,
+  #valores .belief-item p,
+  #valores .belief-item .quality-list li strong {
+    letter-spacing: -0.1px !important;
+  }
+}
+
+/* Mobile adjustments specific for justified text layout gaps */
+@media (max-width: 768px) {
+
+  #quem-somos .about-list li strong,
+  #valores .belief-item p,
+  #valores .belief-item .quality-list li strong {
+    font-size: 0.85rem !important;
+    /* Letra ligeiramente menor faz caber mais palavras por linha */
+    letter-spacing: -0.3px !important;
+    /* Aproxima as letras ligeiramente */
+    word-spacing: -0.5px !important;
+    /* Aproxima as palavras para diminuir os buracos */
+    line-height: 1.5 !important;
+  }
+
+  #valores .belief-item p,
+  #valores .belief-item .quality-list li strong {
+    font-size: 0.95rem !important;
+    /* Ajuste pros cartões de valores para não ficar tão pequeno */
+  }
+}
